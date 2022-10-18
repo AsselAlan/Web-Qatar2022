@@ -1,0 +1,1007 @@
+/* ------------------------------------Index------------------------------------ */
+@font-face{
+    font-family: "qatar";
+    src: url('../fonts/Qatar2022Arabic-Heavy.ttf');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*----------------------Header----------------------*/
+
+
+header{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+header .container_logo{
+    position: absolute;
+    margin-left: 10%;
+}
+
+header div img{
+  height: 4.5em;
+  position: relative;
+  top: -0.5em;
+}
+
+header nav ul{
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+}
+
+
+header nav ul li{
+    display: inline;
+    margin: 0px 0.4em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+header nav ul li a{
+    color: white;
+    font-size: 1em;
+    border-bottom: solid 3px transparent;
+}
+
+header nav ul li a:hover{
+    border-bottom: solid 3px #85414c;
+    transition: border 300ms ease-in-out;
+}
+
+
+
+/*----------------------Home----------------------*/
+
+.home_inicio{
+    z-index: 99;
+}
+.home_inicio_img_fondo{
+    background-image: url("../img/fondo_inicio.jpg");
+    background-size: cover;
+    background-position: 100%;
+    width: 100%;
+    height: 125vh;
+}
+
+.home_inicio_mitad_left{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 125vh;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.home_inicio_mitad_right{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 125vh;
+    width: 60%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding-right: 15%;
+    padding-left: 5%;
+    padding-bottom: 25vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home_inicio_mitad_right h1{
+    font-size: 1.8em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-bottom: 50px;
+    border-bottom: medium solid #bb0927;
+    margin-right: auto;
+}
+
+.home_inicio_mitad_right h1 span{
+    font-size: 1em;
+}
+
+.home_inicio_mitad_right p{
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.home_inicio_mitad_right button{
+    font-size: 0.55em;
+    width: 12em;
+    height: 3em;
+    background-color: #bb0927;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.home_inicio_mitad_right button:hover{
+    background-color: #5c0615;
+    transition: all 300ms ease-in-out;
+}
+
+
+/* ----------------------fixture----------------------*/
+.fixture_inicio{
+    height: 55vh;
+    width: 100%;
+    display: flex;
+}
+
+.mitad_rigth_top{
+    width: 40%;
+    position: relative;
+    left: 0;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mitad_rigth_top span{
+    font-size: 18em;
+    transform: rotate(-90deg);
+}
+
+.mitad_left_top{
+    width: 60%;
+    padding-left: 10%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mitad_left_top h2{
+    font-size: 1.5em;
+    color: black;
+    margin-right: auto;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    border-bottom: medium solid #bb0927;
+}
+
+.mitad_left_top p{
+    font-size: 1em;
+    color: black;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.mitad_left_top button{
+    font-size: 0.5em;
+    width: 12em;
+    height: 3em;
+    background-color: #bb0927;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.mitad_left_top button:hover{
+    background-color: #5c0615;
+    transition: all 300ms ease-in-out;
+}
+
+
+
+/* ----------------------equipos----------------------*/
+
+
+.equipos_inicio{
+    height: 55vh;
+    width: 100%;
+    display: flex;
+    background-color: #5c0615;
+
+}
+
+.equipos_inicio .mitad_rigth_bottom{
+    padding: 0 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.mitad_rigth_bottom h2{
+    font-size: 1.5em;
+    color: white;
+    margin-right: auto;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+
+.mitad_rigth_bottom p{
+    font-size: 1em;
+    color: white;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.mitad_rigth_bottom button{
+    font-size: 0.5em;
+    width: 12em;
+    height: 3em;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    border: none;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.mitad_rigth_bottom button:hover{
+    background-color: #5c0615;
+    transition: all 300ms ease-in-out;
+}
+
+
+/* ----------------------estadios----------------------*/
+.estadios_inicio{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.estadios_inicio .mitad_rigth_top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-right: 8%;
+}
+.estadios_inicio .mitad_rigth_top img{
+    width: 18em;
+    border-radius: 20px;
+}
+.estadios_inicio .mitad_rigth_top img:hover{
+    width: 20em;
+    transition: all 300ms ease-in-out;
+}
+
+
+/* ----------------------noticias----------------------*/
+.noticias_inicio{
+    height: 50vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+}
+.noticias_inicio div{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.noticias_inicio div div{
+    display: flex;
+    flex-direction: column;
+}
+/* ----------------------footer----------------------*/
+footer{
+    height: 25vh;
+    width: 100%;
+    background-color: #4e4e4e;
+}
+
+
+
+/* ------------------------------------Fixture------------------------------------ */
+.home_fixture{
+    height: 125vh;
+    width: 100%;
+    background-image: url("../img/fondo_fixture.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    z-index: 99;
+}
+
+.home_fixture_left{
+    z-index: 99;
+    height: 125vh;
+    padding-bottom: 25vh;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home_fixture_left div{
+    display: flex;
+}
+
+.home_fixture_left div h1{
+    font-size: 3.5em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-bottom: 50px;
+    border-bottom: medium solid #bb0927;
+    margin-left: 35%;
+}
+
+.home_fixture_left div img{
+    height: 8em;
+    margin-right: auto;
+    position: relative;
+}
+
+.home_fixture_left button{
+    font-size: 0.7em;
+    width: 12em;
+    height: 3em;
+    background-color: #bb0927;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 35%;
+    margin-right: auto;
+}
+
+.home_fixture_left button:hover{
+    background-color: #5c0615;
+    transition: all 300ms ease-in-out;
+}
+
+
+.home_fixture_right{
+    height: 125vh;
+    padding-bottom: 25vh;
+    z-index: 99;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    position: relative;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-right: 10%;
+    padding-top: 5%;
+}
+
+.home_fixture_right h2{
+    font-size: 1.7em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-bottom: 20px;
+    margin-right: auto;
+}
+
+
+.home_fixture_right p{
+    font-size: 1.3em;
+    color: white;
+    margin-bottom: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+
+
+/* ----------------------fixture_cruces----------------------*/
+
+
+.fixture_cruces_section{
+    z-index: 100;
+    background-image: url("../img/fondo_blanco.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    top: -10em;
+    padding-top: 15%;
+}
+
+
+/* ----------------------fixture_cruces_nav----------------------*/
+
+
+
+
+.fixture_cruces_section .fixture_nav_cruces{
+    height: 50px;
+    width: 100px;
+    margin: calc(50% - 50px);
+    background-color: #bb0927;
+
+    position: fixed;
+    bottom: 0;
+
+    margin-bottom: 20px;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.fixture_cruces_section .fixture_nav_cruces:hover{
+    height: 60px;
+    width: 80%;
+    background-color: #bb0927;
+
+    margin: 0 10%;
+    margin-bottom: 20px;
+    border-radius: 50px;
+
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.fixture_nav_cruces span{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+
+.material-symbols-outlined{
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+
+.fixture_cruces_section .fixture_nav_cruces:hover span{
+    display: none;
+}
+
+.fixture_cruces_section .fixture_nav_cruces nav{
+    display: none;
+}
+
+.fixture_cruces_section .fixture_nav_cruces:hover nav{
+    display: flex;
+}
+
+.fixture_cruces_section .fixture_nav_cruces:hover a{
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin: 0 20px;
+    border-bottom: solid 2px transparent;
+}
+
+.fixture_cruces_section .fixture_nav_cruces a:hover{
+    border-bottom: solid 2px white;
+}
+
+
+/* ----------------------fixture_cruces_grupos----------------------*/
+
+.fixture_cruces_section h1{
+    font-size: 2em;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    padding: 5% 0;
+}
+
+.fixture_cruces_grupos .tabla_grupos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 10%;
+}
+
+.fixture_cruces{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px 20%;
+}
+
+.main_tabla{
+    margin: 5% 5%;
+}
+
+
+.fixture_cruces table .nombre_grupo, .tabla_grupos table .nombre_grupo{
+    font-family: qatar;
+    color: white;
+    background-color: #5c0615;
+    border-top-left-radius: 20px;
+}
+
+
+.fixture_cruces table tr th, .tabla_grupos table tr th{
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color:#4e4e4e3b;
+    color: #5c0615;
+    margin-top: 5px;
+}
+
+.fixture_cruces .talbe_in, .tabla_grupos .talbe_in{
+    width: 100%;
+}
+
+.fixture_cruces .talbe_in tr td, .tabla_grupos .talbe_in tr td{
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color:#4e4e4e3b;
+    color: #5c0615;
+    margin-top: 5px;
+}
+
+
+.fixture_cruces .talbe_in input, .tabla_grupos .talbe_in input{
+    width: 50px;
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ------------------------------------Equipos------------------------------------ */
+
+.home_equipos{
+    height: 125vh;
+    width: 100%;
+    background-image: url("../img/fondo_equipos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    display: flex;
+    z-index: 98;
+}
+
+.home_equipos_center{
+    height: 125vh;
+    width: 100%;
+
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 25vh 20%;
+}
+
+
+.home_equipos_center h1{
+    font-size: 2.3em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-bottom: 40px;
+    border-bottom: medium solid #bb0927;
+    margin-right: auto;
+}
+
+.home_equipos_center p{
+    font-size: 1.3em;
+    color: white;
+    margin-bottom: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.home_equipos_center button{
+    font-size: 0.7em;
+    width: 12em;
+    height: 3em;
+    background-color: #bb0927;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.home_equipos_center button:hover{
+    background-color: #5c0615;
+    transition: all 300ms ease-in-out;
+}
+
+/* ----------------------equipos_grupos----------------------*/
+
+.equipos_grupos{
+    height: 100vh;
+    z-index: 100;
+    background-image: url("../img/fondo_blanco.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -10em;
+    padding-top: 15%;
+}
+
+.equipos_grupos h1{
+    font-size: 2em;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.equipos_grupos div{
+    display: flex;
+    justify-content: space-around;
+    height: 40vh;
+}
+
+.equipos_grupos div table{
+    display: inline;
+}
+
+.equipos_grupos div table th{
+    font-family: qatar;
+    color: white;
+    background-color: #5c0615;
+    border-top-left-radius: 20px;
+    width: 200px;
+}
+
+.equipos_grupos div table td{
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color:#4e4e4e3b;
+    color: #5c0615;
+    margin-top: 5px;
+}
+
+/* ----------------------Equipos_clasificaciones----------------------*/
+
+
+.equipos_tablasclasificatorias{
+    width: 100%;
+}
+
+.equipos_tablasclasificatorias h1{
+    font-size: 2em;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.equipos_tablasclasificatorias .div-clasi-prim{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+}
+
+.equipos_tablasclasificatorias .div-clasi-seg{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+}
+
+
+.equipos_tablasclasificatorias div div{
+    display: flex;
+    justify-content: center;
+}
+
+.equipos_tablasclasificatorias div table{
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.equipos_tablasclasificatorias div table td td{
+    border: solid 1px rgba(0, 0, 0, 0.445);
+}
+
+.equipos_tablasclasificatorias div table tr .th_tittle{
+    border-top-left-radius: 20px;
+    font-family: qatar;
+    font-size: 30px;
+}
+
+.equipos_tablasclasificatorias div table th{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: #5c0615;
+    width: 400px;
+}
+
+
+
+
+/* ------------------------------------Estadios------------------------------------ */
+
+.home_estadios{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/fondo_estadios.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    z-index: 99;
+}
+
+.home_estadios_left{
+    height: 100vh;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.home_estadios_left h1{
+    font-size: 3em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-bottom: 50px;
+    border-bottom: medium solid #bb0927;
+    margin-left: 30%;
+    margin-right: auto;
+}
+
+.home_estadios_left p{
+    font-size: 1.3em;
+    color: white;
+    margin-bottom: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin-left: 30%;
+}
+
+
+.home_estadios_left button{
+    font-size: 0.6em;
+    width: 12em;
+    height: 3em;
+    background-color: #bb0927;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 30%;
+    margin-right: auto;
+}
+
+.home_estadios_left button:hover{
+    background-color: #5c0615;
+    transition: all 300ms ease-in-out;
+}
+
+
+.home_estadios_right{
+    height: 100vh;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    position: relative;
+    right: 0;
+}
+
+
+/* ----------------------estadios_lista----------------------*/
+.estadios_lista{
+    width: 100%;
+
+    text-align: center;
+}
+
+.estadios_lista h1{
+    font-size: 2em;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-bottom: 50px;
+    margin-left: 30%;
+    margin-right: auto;
+}
+.estadios_lista h2{
+    font-size: 2em;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-bottom: 50px;
+    margin-left: 30%;
+    margin-right: auto;
+}
+
+.estadios_lista div{
+   height: 55vh;
+   width: 100%;  
+   display: flex;
+}
+
+.estadios_lista div img{
+   height: 300px;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------Noticias------------------------------------ */
+
+
+.home_noticias{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/fondo_noticias.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    z-index: 99;
+}
+
+.home_noticias_left{
+    height: 100vh;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.home_noticias_left h1{
+    font-size: 3em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-bottom: 50px;
+    border-bottom: medium solid #bb0927;
+    margin-left: 25%;
+    margin-right: auto;
+}
+
+.home_noticias_left p{
+    font-size: 1.3em;
+    color: white;
+    margin-bottom: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin-left: 25%;
+}
+
+
+.home_noticias_left button{
+    font-size: 0.6em;
+    width: 12em;
+    height: 3em;
+    background-color: #bb0927;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 25%;
+    margin-right: auto;
+}
+
+.home_noticias_left button:hover{
+    background-color: #5c0615;
+    transition: all 300ms ease-in-out;
+}
+
+
+.home_noticias_right{
+    height: 100vh;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    position: relative;
+    right: 0;
+}
+
+/* ----------------------noticias_carrucel----------------------*/
+
+.noticias_carrucel div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.noticias_carrucel div div{
+    display: flex;
+    flex-direction: column;
+}
+
+.noticias_carrucel div img{
+    width: 200px;
+}
