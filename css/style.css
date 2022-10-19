@@ -889,7 +889,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .estadios_lista div img{
-   height: 325px; 
+   height: 300px; 
    border-radius: 25px; 
    margin: 0 10%;
 }
@@ -897,7 +897,6 @@ input[type=number]::-webkit-outer-spin-button {
 .estadios_lista div p{
     font-size: 1.2em;
     color: black;
-    margin-bottom: 40px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     margin-right: 10%;
@@ -1000,18 +999,35 @@ input[type=number]::-webkit-outer-spin-button {
     right: 0;
 }
 
-/* ----------------------noticias_carrucel----------------------*/
 
-.noticias_carrucel div{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+/* ----------------------noticias_noticias----------------------*/
+
+.noticias_noticias{
+    width: 100%;
+    display: flex
+}
+.noticias_left{
+    width: 20%;
+    border-right: 1px solid #4e4e4e31;
+    border-top: 1px solid #4e4e4e31;
 }
 
-.noticias_carrucel div div{
+.noticias_right{
+    width: 20%;
+    border-left: 1px solid #4e4e4e31;
+    border-top: 1px solid #4e4e4e31;
+}
+
+.noticias_medium{   
+    width: 60%;
     display: flex;
+    align-items: center;
     flex-direction: column;
+    border-top: 1px solid #4e4e4e31;
+    padding-top: 2em;
 }
 
-.noticias_carrucel div img{
-    width: 200px;
+.twitter-tweet{
+    border: none;
 }
