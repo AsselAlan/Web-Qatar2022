@@ -18,6 +18,7 @@ body{
 a{
     text-decoration: none;
     cursor: pointer;
+    color: none;
 }
 
 /*----------------------Header----------------------*/
@@ -31,6 +32,8 @@ header{
     width: 100%;
     height: 70px;
     z-index: 100;
+
+
 }
 
 header nav{
@@ -73,6 +76,7 @@ header nav ul li a{
 header nav ul li a:hover{
     border-bottom: solid 3px #85414c;
     transition: border 300ms ease-in-out;
+    color: white;
 }
 
 
@@ -87,20 +91,21 @@ header nav ul li a:hover{
     background-size: cover;
     background-position: 100%;
     width: 100%;
-    height: 125vh;
+    height: 100vh;
 }
 
 .home_inicio_mitad_left{
-    background-color: rgba(0, 0, 0, 0.3);
-    height: 125vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100vh;
     width: 40%;
     position: absolute;
     top: 0;
     left: 0;
 }
+
 .home_inicio_mitad_right{
-    background-color: rgba(0, 0, 0, 0.3);
-    height: 125vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100vh;
     width: 60%;
     position: absolute;
     top: 0;
@@ -108,7 +113,6 @@ header nav ul li a:hover{
 
     padding-right: 15%;
     padding-left: 5%;
-    padding-bottom: 25vh;
 
     display: flex;
     flex-direction: column;
@@ -155,7 +159,8 @@ header nav ul li a:hover{
 }
 
 
-/* ----------------------fixture----------------------*/
+
+/* ----------------------fixture_inicio----------------------*/
 .fixture_inicio{
     height: 55vh;
     width: 100%;
@@ -220,8 +225,10 @@ header nav ul li a:hover{
 }
 
 .mitad_left_top button:hover{
-    background-color: #5c0615;
+    background-color: white;
     transition: all 300ms ease-in-out;
+    border: solid 3px #bb0927;
+    color: #bb0927;
 }
 
 
@@ -237,7 +244,7 @@ header nav ul li a:hover{
 
 }
 
-.equipos_inicio .mitad_rigth_bottom{
+.mitad_rigth_bottom{
     padding: 0 20%;
     width: 100%;
     display: flex;
@@ -279,12 +286,14 @@ header nav ul li a:hover{
 .mitad_rigth_bottom button:hover{
     background-color: #5c0615;
     transition: all 300ms ease-in-out;
+    border: solid 3px white;
+    color: white;
 }
 
 
 /* ----------------------estadios----------------------*/
 .estadios_inicio{
-    height: 70vh;
+    height: 55vh;
     width: 100%;
     display: flex;
     position: relative;
@@ -311,7 +320,7 @@ header nav ul li a:hover{
 .noticias_inicio{
     height: 50vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #5c0615;
     display: flex;
     justify-content: center;
 }
@@ -327,11 +336,176 @@ header nav ul li a:hover{
 }
 /* ----------------------footer----------------------*/
 footer{
-    height: 25vh;
     width: 100%;
-    background-color: #4e4e4e;
+    background-color: #4e4e4ef1;
+}
+footer h3{
+    padding-top: 1em;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 1em;
 }
 
+footer .footer_politicas{
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer_politicas a{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 0px 0.5em;
+    padding-top: 1em;
+    font-size: 0.8em;
+}
+
+footer .subir{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+footer .subir a{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+footer .subir span:hover{
+    position: relative;
+    top: -5px;
+}
+
+@media(max-width: 768px){
+    body{
+        font-size: 18px;
+    }
+/*----------------------Header----------------------*/
+    header nav{
+        display: none;
+    }
+
+    header .container_logo{
+        margin: 0;
+        padding: 0;
+    }
+
+
+/*----------------------Home----------------------*/
+
+    .home_inicio_img_fondo{
+        background-position: center;
+    }
+
+    .home_inicio_mitad_left{
+        display: none;
+    }
+
+    .home_inicio_mitad_right{
+        width: 100%;
+        text-align: center;
+        padding: 0px 5%;
+    }
+
+    .home_inicio_mitad_right h1{
+        border: none;
+        margin: 0;
+        margin-bottom: 10%;
+    }
+
+    .home_inicio_mitad_right p{
+        margin: 0;
+        margin-bottom: 5%;
+    }
+
+/* ----------------------fixture_inicio----------------------*/
+
+    .fixture_inicio{
+        height: 50vh;
+    }
+    .mitad_rigth_top{
+        display: none;
+    }
+
+    .mitad_left_top{
+        width: 100%;
+        padding: 0 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mitad_left_top h2{
+        margin: 0;
+        margin-bottom: 10%;
+    }
+    .mitad_left_top p{
+        text-align: justify;
+        margin-bottom: 5%;
+    }
+
+/* ----------------------equipos----------------------*/
+    .equipos_inicio{
+        height: 50vh;
+    }
+    .mitad_rigth_bottom{
+        margin: 0;
+        padding: 0 5%;
+        text-align: center;
+    }
+    .mitad_rigth_bottom h2{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10%;
+    }
+    .mitad_rigth_bottom p{
+        margin: 0;
+        margin-bottom: 5%;
+    }
+/* ----------------------estadios----------------------*/
+
+    .estadios_inicio{
+        height: 50vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    .estadios_inicio .mitad_rigth_top{
+        padding: 0;
+        margin: 0;
+        height: 25vh;
+    }
+    .estadios_inicio .mitad_left_top{
+        height: 25vh;
+    }
+    .estadios_inicio .mitad_left_top h2{
+        border: none;
+        font-size: 1.3em;
+        padding: 0;
+        margin: 10% 0;
+    }
+    .estadios_inicio .mitad_left_top p{
+        padding: 0;
+        margin: 0;
+    }
+
+    .estadios_inicio .mitad_rigth_top img{
+        width: 15em;
+        border-radius: 20px;
+        margin-bottom: 10%;
+    }
+    .estadios_inicio .mitad_rigth_top img:hover{
+        width: 18em;
+    }
+
+    .noticias_inicio div{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+/* ----------------------noticias----------------------*/
+
+
+}
 
 
 /* ------------------------------------Fixture------------------------------------ */
@@ -622,13 +796,14 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
 
     z-index: 99;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    padding: 25vh 20%;
+    padding: 0 20%;
+    padding-bottom: 10%;
 }
 
 
@@ -872,20 +1047,20 @@ input[type=number]::-webkit-outer-spin-button {
     margin-top: 50px;
 }
 .estadios_lista h2{
-    font-size: 2em;
+    font-size: 1.8em;
     color: black;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    margin-bottom: 5%;
+    font-family: qatar;
+    /* font-weight: 200; */
+    /* margin-bottom: 2%; */
     margin-top: 5%;
 }
 
 .estadios_lista div{
    height: 60vh;
    width: 100%;  
-   display: flex;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
    align-items: center;
-   margin-bottom: 5%;
 }
 
 .estadios_lista div img{
@@ -900,6 +1075,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     margin-right: 10%;
+    text-align: justify
 }
 
 
@@ -927,24 +1103,25 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 .home_noticias{
-    height: 100vh;
+    height: 125vh;
     width: 100%;
     background-image: url("../img/fondo_noticias.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    z-index: 99;
+    z-index: 98;
 }
 
 .home_noticias_left{
-    height: 100vh;
+    height: 125vh;
     width: 60%;
     background-color: rgba(0, 0, 0, 0.4);
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 10%;
 }
 
 
@@ -991,7 +1168,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 .home_noticias_right{
-    height: 100vh;
+    height: 125vh;
     width: 40%;
     background-color: rgba(0, 0, 0, 0.4);
 
@@ -1005,7 +1182,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 .noticias_noticias{
     width: 100%;
-    display: flex
+    display: flex;
+    background-image: url("../img/fondo_blanco.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -10em;
+    z-index: 100;
+    
 }
 .noticias_left{
     width: 20%;
@@ -1025,9 +1209,6 @@ input[type=number]::-webkit-outer-spin-button {
     align-items: center;
     flex-direction: column;
     border-top: 1px solid #4e4e4e31;
-    padding-top: 2em;
+    padding-top: 10%;
 }
 
-.twitter-tweet{
-    border: none;
-}

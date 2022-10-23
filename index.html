@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- css -->
-    <link rel="stylesheet" href="./css/style.css">
-
+    
     <!-- fonts -->
     <link rel="stylesheet" href="https://www.fontspad.com/font/27567-Qatar-2022-World-Cup-Arabic-Font-Download">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,13 +13,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <!-- icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+    <!-- animacioones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>Qatar 2022</title>
 </head>
 <body>
 
-    <header>
+    <header class="animate__animated animate__fadeIn">
         <div class="container_logo"><img src="./img/logo_qatar.png" alt="logo fifa mundial Qatar 2022"></div>
         <nav>
             <ul>
@@ -35,29 +37,30 @@
     </header>
 
 
-    <section class="home_inicio">
+    <section class="home_inicio" id="inicio">
         <div class="home_inicio_img_fondo">
             <div class="home_inicio_mitad_left"></div>
             <div class="home_inicio_mitad_right">
-                <h1>Copa Mundial de Futbol 2022 <span class="material-symbols-outlined">sports_soccer</span></h1>
-                <p>La copa Mundial de Futbol de la FIFA Qatar 2022 sera la XXII. Se desarrollara desde el 20 de noviembre al 18 de diciembre en Qatar, pais el cual consigio los derechos de organizacion el 2 de diciembre de 2010.Consulta todos los partidos, grupos y equipos previos a la Copa Mundial de la FIFA Qatar 2022™.</p>
-                <a href="#fixture_inicio"><button>SABER MAS</button></a>
+                <h1 class="animate__animated animate__bounceInRight">Copa Mundial de Futbol 2022 <span class="material-symbols-outlined">sports_soccer</span></h1>
+                <p  class=" animate__animated animate__bounceInLeft">La copa Mundial de Futbol de la FIFA Qatar 2022 sera la XXII. Se desarrollara desde el 20 de noviembre al 18 de diciembre en Qatar, pais el cual consigio los derechos de organizacion el 2 de diciembre de 2010.Consulta todos los partidos, grupos y equipos previos a la Copa Mundial de la FIFA Qatar 2022™.</p>
+                <a href="#fixture_inicio"><button class="animate__animated animate__bounceInUp">SABER MAS</button></a>
             </div>
         </div>
     </section>
 
     <section class="fixture_inicio" id="fixture_inicio">
-        <div class="mitad_left_top">
+        <div class="mitad_left_top" data-aos="fade-right">
            <h2>Partidos</h2>
            <p>El Mundial de Qatar 2022 condecorará al campeón del mundo número 22 de toda la historia. Quien se quede con el trofeo, el más preciado de todos, deberá recorrer antes un largo camino de siete partidos que empezará el 20 de noviembre y finalizará menos de un mes más tarde.</p>
            <a href="./pages/fixture.html#partidos"><button>VER PARTIDOS</button></a>
         </div>
-        <div class="mitad_rigth_top">
-            <span class="material-symbols-outlined">sports_soccer</span>
+        <div class="mitad_rigth_top" data-aos="fade-left">
+            <span data-aos="fade-left" class="material-symbols-outlined">sports_soccer</span>
         </div>
     </section>
+    
 
-    <section class="equipos_inicio">
+    <section class="equipos_inicio" data-aos="fade-up">
 
          <div class="mitad_rigth_bottom">
             <h2>32 Equipos clasificados</h2>
@@ -68,11 +71,11 @@
     </section>
 
     <section class="estadios_inicio">
-        <div class="mitad_left_top">
+        <div class="mitad_left_top" data-aos="zoom-in">
             <h2>¿Dónde se jugará la gran final?</h2>
             <p>La gran final del 18 de diciembre se celebrará en Lusail Stadium, con capacidad para 80,000 aficionados.</p>
          </div>
-         <div class="mitad_rigth_top">
+         <div class="mitad_rigth_top" data-aos="flip-down">
             <a href="./pages/estadios.html"><img src="./img/estadio_inicio.jpg" alt=""></a>
          </div>
     </section>
@@ -102,9 +105,33 @@
     </section>
 
     <footer>
-        <h3>Todos los derechos reservados</h3>
+
+        <h3>© Octubre 2022 Assel Alan Ezequiel. Todos los derechos reservados.</h3>
+        
+        <div class="footer_politicas">
+            <a href="#">Política de cookies </a>
+            <a href="#">Política de privacidad </a>
+            <a href="#">Términos y condiciones de uso </a>
+            <a href="#">Publicidad </a>
+        </div>
+        
+        <h3>Sígueme en</h3>
+        <a href=""><img src="" alt=""></a>
+        <a href=""><img src="" alt=""></a>
+
+        <div class="subir">
+            <a href="#inicio"><span class="material-symbols-outlined">arrow_upward</span></a>
+            <a href="#inicio"><h4>Subir</h4></a>
+        </div>
+
+
+
+
+
     </footer>
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration: 1000});
+      </script>
 </body>
 </html>
