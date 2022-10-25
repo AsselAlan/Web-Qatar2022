@@ -13,6 +13,7 @@
 
 body{
     font-size: 20px;
+    overflow-x: hidden;
 }
 
 a{
@@ -539,8 +540,8 @@ footer .subir span:hover{
     
 /* ----------------------noticias----------------------*/
 
-
 }
+
 
 
 /* ------------------------------------Fixture------------------------------------ */
@@ -584,21 +585,6 @@ footer .subir span:hover{
     height: 8em;
     margin-right: auto;
     position: relative;
-}
-
-.home_fixture_left button{
-    font-size: 0.7em;
-    width: 12em;
-    height: 3em;
-    background-color: #bb0927;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    border: none;
-    color: white;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-left: 35%;
-    margin-right: auto;
 }
 
 .home_fixture_left button:hover{
@@ -813,10 +799,81 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
+@media(max-width: 768px){
+    .home_fixture{
+        height: 125vh;
+        display: block;
+    }
+
+    .home_fixture_left{
+        height: 25vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home_fixture_left div {
+        padding-top: 20%;
+    }
+    
+    .home_fixture_left div h1{
+       margin: 0;
+       padding: 0;
+    }
+
+
+
+    .home_fixture_right{
+        height: 85vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 25%;
+    }
+
+    .home_fixture_right h2{
+       margin: 0;
+       padding: 0 5%;
+    }
+
+    
+    .home_fixture_right p{
+        margin: 0;
+        padding: 0 5%;
+    }
+
+/* ----------------------fixture_cruces----------------------*/
+
+    .fixture_cruces_section{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .fixture_cruces_grupos .tabla_grupos{
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    .fixture_cruces{
+        margin: 0;
+    }
+
+    
+
+/* ----------------------fixture_cruces_grupos----------------------*/
+}
+
+
+
 /* ------------------------------------Equipos------------------------------------ */
 
 .home_equipos{
-    height: 125vh;
     width: 100%;
     background-image: url("../img/fondo_equipos.jpg");
     background-size: cover;
@@ -882,7 +939,6 @@ input[type=number]::-webkit-outer-spin-button {
 /* ----------------------equipos_grupos----------------------*/
 
 .equipos_grupos{
-    height: 100vh;
     z-index: 100;
     background-image: url("../img/fondo_blanco.png");
     background-repeat: no-repeat;
@@ -904,7 +960,7 @@ input[type=number]::-webkit-outer-spin-button {
 .equipos_grupos div{
     display: flex;
     justify-content: space-around;
-    height: 40vh;
+    padding-bottom: 15vh;
 }
 
 .equipos_grupos div table{
@@ -916,7 +972,8 @@ input[type=number]::-webkit-outer-spin-button {
     color: white;
     background-color: #5c0615;
     border-top-left-radius: 20px;
-    width: 200px;
+    text-align: center;
+    width: 300px;
 }
 
 .equipos_grupos div table td{
@@ -933,7 +990,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 .equipos_tablasclasificatorias{
+    height: 170vh;
     width: 100%;
+    position: relative;
+    top: -10em;
 }
 
 .equipos_tablasclasificatorias h1{
@@ -942,7 +1002,6 @@ input[type=number]::-webkit-outer-spin-button {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     text-align: center;
-    padding-top: 50px;
 }
 
 .equipos_tablasclasificatorias .div-clasi-prim{
@@ -987,9 +1046,72 @@ input[type=number]::-webkit-outer-spin-button {
     width: 400px;
 }
 
+@media(max-width: 768px){
 
+    .home_equipos{
+        height: 125vh;
+        background-position: center;
+        background-position-x: 0;
+    }
 
+    .home_equipos_center{
+        height: 125vh;
+        padding: 0 10%;
+        margin: 0;
+        padding-bottom: 30vh;
+    }
+    
+    .home_equipos_center h1{
+        margin: 0;
+        padding: 0;
+        font-size: 1.8em;
+        margin-bottom: 10%;
+    }
 
+    .home_equipos_center p{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10%;
+    }
+
+    .home_equipos_center button{
+        margin: 0;
+        padding: 0;
+    }
+    
+
+/* ----------------------equipos_grupos----------------------*/
+   
+    
+    .equipos_grupos{
+        background-size: contain; 
+    }
+
+    .equipos_grupos div{
+        flex-direction: column; 
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .equipos_grupos div table{
+        margin-bottom: 10%;
+        font-size: 1.5em;
+    }
+
+    .equipos_tablasclasificatorias{
+        height: 270vh;
+    }
+    
+    .equipos_tablasclasificatorias .div-clasi-prim{
+        grid-template-columns: 1fr;
+    }
+
+    .equipos_tablasclasificatorias div div{
+        margin: 0 10%;
+    }
+
+}
 /* ------------------------------------Estadios------------------------------------ */
 
 .home_estadios{
@@ -1112,27 +1234,6 @@ input[type=number]::-webkit-outer-spin-button {
     margin-right: 10%;
     text-align: justify
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ------------------------------------Noticias------------------------------------ */
 
