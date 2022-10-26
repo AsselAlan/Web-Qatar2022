@@ -36,3 +36,28 @@ function agregarOnclik(){
         fueraMenu[i].setAttribute("onclick","toggleMenuOff()");        
     }
 }
+
+let sectionCarga = document.querySelector(".pantalla_carga")
+
+function pantallaCarga (sectionCarga){
+    setTimeout(()=> {
+        sectionCarga.classList.add("animate__animated")
+        sectionCarga.classList.add("animate__fadeOutDownBig")
+    }
+    ,1500)
+};
+
+pantallaCarga(sectionCarga);
+
+let sectionCargaNoticias = document.querySelector(".pantalla_carga_noticias")
+
+function pantallaCargaNoticias(sectionCargaNoticias){
+    setTimeout(()=> {
+        sectionCargaNoticias.classList.add("animate__animated")
+        sectionCargaNoticias.classList.add("animate__fadeOutDownBig")
+    }
+    ,3000)
+};
+
+pantallaCargaNoticias(sectionCargaNoticias);
+

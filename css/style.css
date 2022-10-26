@@ -32,7 +32,7 @@ header{
     left: 0;
     width: 100%;
     height: 70px;
-    z-index: 100;
+    z-index: 99;
 }
 
 header .nav-desktop{
@@ -118,7 +118,7 @@ header .nav2 li{
 /*----------------------Home----------------------*/
 
 .home_inicio{
-    z-index: 99;
+    z-index: 98;
 }
 .home_inicio_img_fondo{
     background-image: url("../img/fondo_inicio.jpg");
@@ -422,7 +422,7 @@ footer .subir span:hover{
 /*----------------------Header----------------------*/
     header .nav-desktop{
         display: none;
-        z-index: 100;
+        z-index: 98;
     }
 
     header .nav-movile{
@@ -558,7 +558,7 @@ footer .subir span:hover{
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    z-index: 99;
+    z-index: 98;
 }
 
 .home_fixture_left{
@@ -601,7 +601,7 @@ footer .subir span:hover{
 .home_fixture_right{
     height: 125vh;
     padding-bottom: 25vh;
-    z-index: 99;
+    z-index: 98;
     width: 50%;
     background-color: rgba(0, 0, 0, 0.3);
 
@@ -640,7 +640,7 @@ footer .subir span:hover{
 
 
 .fixture_cruces_section{
-    z-index: 100;
+    z-index: 99;
     background-image: url("../img/fondo_blanco.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -820,7 +820,7 @@ input[type=number]::-webkit-outer-spin-button {
         padding: 0;
         align-items: none;
         justify-content: none;
-        z-index: 100;
+        z-index: 99;
     }
 
     
@@ -836,7 +836,7 @@ input[type=number]::-webkit-outer-spin-button {
         width: 100%;
         margin: 0;
         padding: 0;
-        z-index: 98;
+        z-index: 99;
         text-align: none;
         justify-content: start;
     }
@@ -889,14 +889,14 @@ input[type=number]::-webkit-outer-spin-button {
     background-repeat: no-repeat;
     background-position: 100%;
     display: flex;
-    z-index: 98;
+    z-index: 97; 
 }
 
 .home_equipos_center{
     height: 125vh;
     width: 100%;
 
-    z-index: 99;
+    z-index: 98;
     background-color: rgba(0, 0, 0, 0.6);
 
     display: flex;
@@ -948,7 +948,7 @@ input[type=number]::-webkit-outer-spin-button {
 /* ----------------------equipos_grupos----------------------*/
 
 .equipos_grupos{
-    z-index: 100;
+    z-index: 99;
     background-image: url("../img/fondo_blanco.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1202,6 +1202,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
 
     text-align: center;
+    margin-bottom: 5%;
 }
 
 .estadios_lista h1{
@@ -1310,7 +1311,7 @@ input[type=number]::-webkit-outer-spin-button {
 .home_noticias_left{
     height: 125vh;
     width: 60%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
 
     display: flex;
     flex-direction: column;
@@ -1364,7 +1365,7 @@ input[type=number]::-webkit-outer-spin-button {
 .home_noticias_right{
     height: 125vh;
     width: 40%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
 
     position: relative;
     right: 0;
@@ -1384,7 +1385,7 @@ input[type=number]::-webkit-outer-spin-button {
     background-repeat: no-repeat;
     position: relative;
     top: -10em;
-    z-index: 100;
+    z-index: 98;
 
 }
 .noticias_left{
@@ -1437,3 +1438,113 @@ input[type=number]::-webkit-outer-spin-button {
     display: flex;
     padding: 0;
 }
+
+
+@media(max-width: 768px){
+
+    .home_noticias{
+        z-index: 98;
+    }
+    .home_noticias_left{
+        width: 100%;
+        z-index: 98;
+        padding-bottom: 30vh;
+    }
+
+    .home_noticias_right{
+        display: none;
+    }
+
+    .home_noticias_left h1{
+        margin: 0 5%;
+        padding: 0;
+        margin-right: auto;
+        margin-bottom: 10%;
+    }
+
+
+    .home_noticias_left p{
+        margin: 0 5%;
+        padding: 0;
+        padding-bottom: 10%;
+
+    }
+
+
+    .noticias_noticias{
+        padding-top: 5%;
+    }
+
+    .noticias_left{
+        display: none;
+    }
+
+    .noticias_right{
+        display: none;
+    }
+
+    .noticias_medium{
+        width: 100%;
+        margin: 0 5%;
+    }
+
+
+}
+
+.pantalla_carga_noticias{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.pantalla_carga{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.logo_carga{
+    width: 100%;
+    height: 100vh;
+    background-color: #5c0615;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-wrap {
+    border-radius: 30px;
+
+}
+
+.triangle1{
+    border-bottom-color: #5c0615;
+
+}
+.triangle1 img{
+    height: 300px;
+    border-bottom-color: #5c0615;
+    animation: fadecolor 1s infinite;
+    animation: rotation ease-in-out 1s infinite;   
+}
+
+
+
+@keyframes rotation {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(360deg);}
+    100% {transform: rotate(360deg);}
+}          
+
+@keyframes fadecolor {
+    0% {transform: rotate(-0deg);}
+    20% {transform: rotate(-360deg);}
+    100% {transform: rotate(-360deg);}
+}
+
+
