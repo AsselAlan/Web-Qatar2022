@@ -820,7 +820,7 @@ input[type=number]::-webkit-outer-spin-button {
         padding: 0;
         align-items: none;
         justify-content: none;
-        z-index: 99;
+        z-index: 98;
     }
 
     
@@ -836,7 +836,7 @@ input[type=number]::-webkit-outer-spin-button {
         width: 100%;
         margin: 0;
         padding: 0;
-        z-index: 99;
+        z-index: 98;
         text-align: none;
         justify-content: start;
     }

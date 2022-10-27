@@ -37,9 +37,20 @@ function agregarOnclik(){
     }
 }
 
+
+
+let animate = document.getElementsByClassName("animate")
+console.log(animate)
+
+
+setTimeout( ()=>{ for (i = 0; i < animate.length; i ++) {
+    animate[i].classList.add("animate__bounceInDown")}
+},1500)
+
+
 let sectionCarga = document.querySelector(".pantalla_carga")
 
-function pantallaCarga (sectionCarga){
+function pantallaCarga (sectionCarga,){
     setTimeout(()=> {
         sectionCarga.classList.add("animate__animated")
         sectionCarga.classList.add("animate__fadeOutDownBig")
@@ -48,6 +59,16 @@ function pantallaCarga (sectionCarga){
 };
 
 pantallaCarga(sectionCarga);
+
+
+let animateNot = document.getElementsByClassName("animateNot")
+console.log(animateNot)
+
+
+setTimeout( ()=>{ for (i = 0; i < animateNot.length; i ++) {
+    animateNot[i].classList.add("animate__bounceInDown")}
+},3000)
+
 
 let sectionCargaNoticias = document.querySelector(".pantalla_carga_noticias")
 
