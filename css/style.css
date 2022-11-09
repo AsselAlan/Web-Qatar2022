@@ -35,6 +35,7 @@ header{
     left: 0;
     width: 100%;
     height: 70px;
+    background-color: rgba(0, 0, 0, 0.476);
     z-index: 99;
 }
 
@@ -51,6 +52,7 @@ header .container_logo{
 
 header div img{
   height: 4.5em;
+  margin-left: 100%;
   position: relative;
   top: -0.5em;
 }
@@ -59,12 +61,13 @@ header nav ul{
     position: absolute;
     right: 0;
     margin-right: 10%;
+    margin-top: 18px;
 }
 
 
 header nav ul li{
     display: inline;
-    margin: 0px 0.4em;
+    margin: 0 0.4em;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
 }
@@ -103,6 +106,7 @@ header .botton_burger span{
     border: none;
     font-size: 1.5em;
     padding-right: 10%;
+    margin-top: 5px;
 }
 
 header .nav2{
@@ -115,6 +119,7 @@ header .nav2{
 header .nav2 li{
     padding-top: 5%;
 }
+
 
 
 /*----------------------Home----------------------*/
@@ -335,7 +340,7 @@ header .nav2 li{
 }
 
 .estadios_inicio .mitad_left_top{
-    padding-left: 5%;
+    padding-left: 10%;
     width: 50%;
 }
 .estadios_inicio .mitad_rigth_top{
@@ -438,6 +443,10 @@ footer .subir a{
     header .nav-movile{
         display: block;
     }
+
+    header div img{
+        margin: 0;
+      }
 
 /*----------------------Home----------------------*/
 
@@ -650,7 +659,7 @@ footer .subir a{
 
 
 .fixture_cruces_section{
-    z-index: 99;
+    z-index: 98;
     background-image: url("../img/fondo_blanco.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -1008,10 +1017,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 .equipos_tablasclasificatorias{
-    height: 200vh;
     width: 100%;
     position: relative;
     top: -10em;
+    margin-bottom: -15vh;
 }
 
 .equipos_tablasclasificatorias h1{
@@ -1120,10 +1129,6 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 1.5em;
     }
 
-    .equipos_tablasclasificatorias{
-        height: 270vh;
-    }
-
     .equipos_tablasclasificatorias .div-clasi-prim{
         grid-template-columns: 1fr;
     }
@@ -1217,21 +1222,13 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 5%;
 }
 
-.estadios_lista h1{
-    font-size: 2em;
-    color: black;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
 .estadios_lista h2{
     font-size: 1.8em;
     color: black;
     font-family: qatar;
     font-weight: 200;
     margin-bottom: 2%;
-    margin-top: 5%;
+    padding-top: 5%;
 }
 
 .estadios_lista div{
@@ -1291,7 +1288,7 @@ input[type=number]::-webkit-outer-spin-button {
 
     }
     .estadios_lista h2{
-        margin: 10% 0;
+        padding: 10% 0;
     }
 
     .estadios_lista div img{
@@ -1398,7 +1395,7 @@ input[type=number]::-webkit-outer-spin-button {
     position: relative;
     top: -10em;
     z-index: 98;
-    margin-bottom: -20vh;
+    margin-bottom: -20ºvh;
 
 }
 .noticias_left{
