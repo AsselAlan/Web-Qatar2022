@@ -1,0 +1,990 @@
+
+/* ------------------------------------Fixture------------------------------------ */
+.home_fixture{
+    height: 125vh;
+    width: 100%;
+    background-image: url("../img/fondo_fixture.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    z-index: 98;
+}
+
+.home_fixture_left{
+    height: 125vh;
+    padding-bottom: 25vh;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_fixture_left div{
+    display: flex;
+}
+
+.home_fixture_left div h1{
+    font-size: 3.5em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-bottom: 50px;
+    border-bottom: medium solid #bb0927;
+}
+
+.home_fixture_left div img{
+    height: 8em;
+    margin-right: auto;
+    position: relative;
+}
+
+.home_fixture_left button:hover{
+    background-color: #5c0615;
+    transition: all 300ms ease-in-out;
+}
+
+
+.home_fixture_right{
+    height: 125vh;
+    padding-bottom: 25vh;
+    z-index: 98;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    position: relative;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-right: 10%;
+    padding-top: 5%;
+}
+
+.home_fixture_right h2{
+    font-size: 1.7em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-bottom: 20px;
+    margin-right: auto;
+}
+
+
+.home_fixture_right p{
+    font-size: 1.3em;
+    color: white;
+    margin-bottom: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+
+
+/* ----------------------fixture_cruces----------------------*/
+
+
+.fixture_cruces_section{
+    z-index: 98;
+    background-image: url("../img/fondo_blanco.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    top: -10em;
+    padding-top: 15%;
+}
+
+
+/* ----------------------fixture_cruces_nav----------------------*/
+
+
+
+
+.fixture_cruces_section .fixture_nav_cruces{
+    height: 50px;
+    width: 100px;
+    margin: calc(50% - 50px);
+    background-color: #bb0927;
+
+    position: fixed;
+    bottom: 0;
+
+    margin-bottom: 20px;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 1000 ease-in;
+}
+
+
+.fixture_cruces_section .fixture_nav_cruces:hover{
+    height: 60px;
+    width: 80%;
+
+    margin: 0 10%;
+    margin-bottom: 20px;
+}
+
+
+.fixture_nav_cruces span{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+
+.material-symbols-outlined{
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+
+.fixture_cruces_section .fixture_nav_cruces:hover span{
+    display: none;
+}
+
+.fixture_cruces_section .fixture_nav_cruces nav{
+    display: none;
+}
+
+.fixture_cruces_section .fixture_nav_cruces:hover nav{
+    display: flex;
+}
+
+.fixture_cruces_section .fixture_nav_cruces:hover a{
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin: 0 20px;
+    border-bottom: solid 2px transparent;
+}
+
+.fixture_cruces_section .fixture_nav_cruces a:hover{
+    border-bottom: solid 2px white;
+}
+
+
+/* ----------------------fixture_cruces_grupos----------------------*/
+
+.fixture_cruces_section h1{
+    font-size: 2em;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    padding: 5% 0;
+}
+
+.fixture_cruces_grupos .tabla_grupos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 10%;
+}
+
+.fixture_cruces{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px 20%;
+}
+
+.main_tabla{
+    margin: 5% 5%;
+}
+
+
+.fixture_cruces table .nombre_grupo, .tabla_grupos table .nombre_grupo{
+    font-family: qatar;
+    color: white;
+    background-color: #5c0615;
+    border-top-left-radius: 20px;
+}
+
+
+.fixture_cruces table tr th, .tabla_grupos table tr th{
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color:#4e4e4e3b;
+    color: #5c0615;
+    margin-top: 5px;
+}
+
+.fixture_cruces .talbe_in, .tabla_grupos .talbe_in{
+    width: 100%;
+}
+
+.fixture_cruces .talbe_in tr td, .tabla_grupos .talbe_in tr td{
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color:#4e4e4e3b;
+    color: #5c0615;
+    margin-top: 5px;
+}
+
+
+.fixture_cruces .talbe_in input, .tabla_grupos .talbe_in input{
+    width: 50px;
+    font-size: 1.5em;
+    font-family: qatar;
+    text-align: center;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media(max-width: 768px){
+    .home_fixture{
+        height: 125vh;
+        display: block;
+    }
+
+    .home_fixture_left{
+        height: 35vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: none;
+        z-index: 98;
+    }
+
+    
+    .home_fixture_left div h1{
+       margin: 0;
+       padding: 0;
+    }
+
+
+
+    .home_fixture_right{
+        height: 80vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        z-index: 98;
+        text-align: none;
+        justify-content: start;
+    }
+
+    .home_fixture_right h2{
+       margin: 0;
+       padding: 0 5%;
+       padding-bottom: 5%;
+       font-size: 1.5em;
+       text-align: center;
+    }
+
+
+    .home_fixture_right p{
+        margin: 0;
+        padding: 0 5%;
+        font-size: 1.2em;
+        text-align: justify;
+    }
+
+/* ----------------------fixture_cruces----------------------*/
+
+    .fixture_cruces_section{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .fixture_cruces_grupos .tabla_grupos{
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .fixture_cruces{
+        margin: 0;
+    }
+
+    .fixture_cruces_section .fixture_nav_cruces{
+        display: none;
+    }
+
+
+/* ----------------------fixture_cruces_grupos----------------------*/
+}
+
+
+
+/* ------------------------------------Equipos------------------------------------ */
+
+.home_equipos{
+    width: 100%;
+    background-image: url("../img/fondo_equipos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    display: flex;
+    z-index: 97; 
+}
+
+.home_equipos_center{
+    height: 125vh;
+    width: 100%;
+
+    z-index: 98;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 20%;
+    padding-bottom: 10%;
+}
+
+
+.home_equipos_center h1{
+    font-size: 2.3em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-bottom: 40px;
+    border-bottom: medium solid #bb0927;
+    margin-right: auto;
+}
+
+.home_equipos_center p{
+    font-size: 1.3em;
+    color: white;
+    margin-bottom: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.home_equipos_center button{
+    font-size: 0.7em;
+    width: 12em;
+    height: 3em;
+    background-color: #bb0927;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.home_equipos_center button:hover{
+    background-color: #5c0615;
+    transition: all 300ms ease-in-out;
+}
+
+/* ----------------------equipos_grupos----------------------*/
+
+.equipos_grupos{
+    z-index: 98;
+    background-image: url("../img/fondo_blanco.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -10em;
+    padding-top: 15%;
+}
+
+.equipos_grupos h1{
+    font-size: 2em;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.equipos_grupos div{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15vh;
+}
+
+.equipos_grupos div table{
+    display: inline;
+}
+
+.equipos_grupos div table th{
+    font-family: qatar;
+    color: white;
+    background-color: #5c0615;
+    border-top-left-radius: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.equipos_grupos div table td{
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color:#4e4e4e3b;
+    color: #5c0615;
+    margin-top: 5px;
+}
+
+/* ----------------------Equipos_clasificaciones----------------------*/
+
+
+.equipos_tablasclasificatorias{
+    width: 100%;
+    position: relative;
+    top: -10em;
+    margin-bottom: -15vh;
+}
+
+.equipos_tablasclasificatorias h1{
+    font-size: 2em;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+.equipos_tablasclasificatorias .div-clasi-prim{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+}
+
+.equipos_tablasclasificatorias .div-clasi-seg{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+}
+
+
+.equipos_tablasclasificatorias div div{
+    display: flex;
+    justify-content: center;
+}
+
+.equipos_tablasclasificatorias div table{
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.equipos_tablasclasificatorias div table td td{
+    border: solid 1px rgba(0, 0, 0, 0.445);
+}
+
+.equipos_tablasclasificatorias div table tr .th_tittle{
+    border-top-left-radius: 20px;
+    font-family: qatar;
+    font-size: 30px;
+}
+
+.equipos_tablasclasificatorias div table th{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: #5c0615;
+    width: 400px;
+}
+
+@media(max-width: 768px){
+
+    .home_equipos{
+        height: 125vh;
+        background-position: center;
+        background-position-x: 0;
+    }
+
+    .home_equipos_center{
+        height: 125vh;
+        padding: 0 10%;
+        margin: 0;
+        padding-bottom: 30vh;
+        align-items: center;
+    }
+
+    .home_equipos_center h1{
+        margin: 0;
+        padding: 0;
+        font-size: 1.8em;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    .home_equipos_center p{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10%;
+        text-align: justify;
+    }
+
+    .home_equipos_center button{
+        margin: 0;
+        padding: 0;
+    }
+
+
+/* ----------------------equipos_grupos----------------------*/
+
+
+    .equipos_grupos{
+        background-size: contain;
+    }
+
+    .equipos_grupos div{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .equipos_grupos div table{
+        margin-bottom: 10%;
+        font-size: 1.5em;
+    }
+
+    .equipos_tablasclasificatorias .div-clasi-prim{
+        grid-template-columns: 1fr;
+    }
+
+    .equipos_tablasclasificatorias div div{
+        margin: 0 10%;
+    }
+
+}
+/* ------------------------------------Estadios------------------------------------ */
+
+.home_estadios{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/fondo_estadios.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    z-index: 99;
+}
+
+.home_estadios_left{
+    height: 100vh;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.home_estadios_left h1{
+    font-size: 3em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-bottom: 50px;
+    border-bottom: medium solid #bb0927;
+    margin-left: 30%;
+    margin-right: auto;
+}
+
+.home_estadios_left p{
+    font-size: 1.3em;
+    color: white;
+    margin-bottom: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin-left: 30%;
+}
+
+
+.home_estadios_left button{
+    font-size: 0.6em;
+    width: 12em;
+    height: 3em;
+    background-color: #bb0927;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 30%;
+    margin-right: auto;
+}
+
+.home_estadios_left button:hover{
+    background-color: #5c0615;
+    transition: all 300ms ease-in-out;
+}
+
+
+.home_estadios_right{
+    height: 100vh;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    position: relative;
+    right: 0;
+}
+
+
+/* ----------------------estadios_lista----------------------*/
+.estadios_lista{
+    width: 100%;
+
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.estadios_lista h2{
+    font-size: 1.8em;
+    color: black;
+    font-family: qatar;
+    font-weight: 200;
+    margin-bottom: 2%;
+    padding-top: 5%;
+}
+
+.estadios_lista div{
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+}
+
+.estadios_lista div img{
+   height: 300px;
+   border-radius: 25px;
+   margin: 0 10%;
+}
+
+.estadios_lista div p{
+    font-size: 1.2em;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin-right: 10%;
+    text-align: justify
+}
+
+@media(max-width: 768px){
+    .home_estadios_left{
+       width: 100%;
+    }
+
+    .home_estadios_right{
+        display: none;
+    }
+
+    .home_estadios_left h1{
+        margin: 0 10%;
+        padding: 0;
+        margin-bottom: 10%;
+        margin-right: auto;
+    }
+
+    .home_estadios_left p{
+        margin: 0 10%;
+        padding: 0;
+        margin-bottom: 10%;
+    }
+
+
+    /* ----------------------estadios_lista----------------------*/
+
+
+    .estadios_lista div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+
+    }
+    .estadios_lista h2{
+        padding: 10% 0;
+    }
+
+    .estadios_lista div img{
+        height: 200px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .estadios_lista div p{
+        margin: 0 10%;
+        padding: 10% 0;
+    }
+}
+
+/* ------------------------------------Noticias------------------------------------ */
+
+
+.home_noticias{
+    height: 125vh;
+    width: 100%;
+    background-image: url("../img/fondo_noticias.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    z-index: 98;
+}
+
+.home_noticias_left{
+    height: 125vh;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+
+
+.home_noticias_left h1{
+    font-size: 3em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-bottom: 50px;
+    border-bottom: medium solid #bb0927;
+    margin-left: 25%;
+    margin-right: auto;
+}
+
+.home_noticias_left p{
+    font-size: 1.3em;
+    color: white;
+    margin-bottom: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin-left: 25%;
+}
+
+
+.home_noticias_left button{
+    font-size: 0.6em;
+    width: 12em;
+    height: 3em;
+    background-color: #bb0927;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 25%;
+    margin-right: auto;
+}
+
+.home_noticias_left button:hover{
+    background-color: #5c0615;
+    transition: all 300ms ease-in-out;
+}
+
+
+.home_noticias_right{
+    height: 125vh;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    position: relative;
+    right: 0;
+}
+
+
+
+
+
+/* ----------------------noticias_noticias----------------------*/
+
+.noticias_noticias{
+    width: 100%;
+    display: flex;
+    background-image: url("../img/fondo_blanco.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -10em;
+    z-index: 98;
+    margin-bottom: -20ºvh;
+
+}
+.noticias_left{
+    width: 20%;
+    border-right: 1px solid #4e4e4e31;
+}
+
+.noticias_right{
+    width: 20%;
+    border-left: 1px solid #4e4e4e31;
+}
+
+.noticias_medium{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10%;
+}
+
+.noticias_vermas{
+    font-size: 0.8em;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    margin: 1em 0px;
+    border: none;
+    color: white;
+
+    background-color: #bb0927;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+
+}
+
+.noticias_vermas:hover{
+    background-color: #5c0615;
+    color: white;
+    transition: all 300ms ease-in-out;
+}
+
+.not_off{
+    display: none;
+}
+
+.not_on{
+    display: flex;
+    padding: 0;
+}
+
+
+
+@media(max-width: 768px){
+
+    .home_noticias{
+        z-index: 98;
+    }
+    .home_noticias_left{
+        width: 100%;
+        z-index: 98;
+        padding-bottom: 30vh;
+    }
+
+    .home_noticias_right{
+        display: none;
+    }
+
+    .home_noticias_left h1{
+        margin: 0 5%;
+        padding: 0;
+        margin-right: auto;
+        margin-bottom: 10%;
+    }
+
+
+    .home_noticias_left p{
+        margin: 0 5%;
+        padding: 0;
+        padding-bottom: 10%;
+
+    }
+
+
+    .noticias_noticias{
+        padding-top: 5%;
+    }
+
+    .noticias_left{
+        display: none;
+    }
+
+    .noticias_right{
+        display: none;
+    }
+
+    .noticias_medium{
+        width: 100%;
+        margin: 0 5%;
+    }
+
+
+}
+
+.pantalla_carga_noticias{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.pantalla_carga{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.logo_carga{
+    width: 100%;
+    height: 100vh;
+    background-color: #5c0615;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-wrap {
+    border-radius: 30px;
+
+}
+
+.triangle1{
+    border-bottom-color: #5c0615;
+
+}
+.triangle1 img{
+    height: 300px;
+    border-bottom-color: #5c0615;
+    animation: fadecolor 1s infinite;
+    animation: rotation ease-in-out 1s infinite;   
+}
+
+@keyframes rotation {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(360deg);}
+    100% {transform: rotate(360deg);}
+}          
+
+@keyframes fadecolor {
+    0% {transform: rotate(-0deg);}
+    20% {transform: rotate(-360deg);}
+    100% {transform: rotate(-360deg);}
+}
+
+
