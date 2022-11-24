@@ -1,4 +1,9 @@
 @import './base/extend';
 @import './base/variables';
+
+
 @import './componentes/index';
-@import './componentes/pages';
+@import './componentes/equipos';
+@import './componentes/estadios';
+@import './componentes/fixture';
+@import './componentes/noticias';

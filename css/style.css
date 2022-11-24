@@ -510,283 +510,6 @@ footer .subir a {
     grid-template-columns: 1fr 1fr;
   }
 }
-/* ------------------------------------Fixture------------------------------------ */
-.home_fixture {
-  height: 125vh;
-  width: 100%;
-  background-image: url("../img/fondo_fixture.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  z-index: 98;
-}
-
-.home_fixture_left {
-  height: 125vh;
-  padding-bottom: 25vh;
-  width: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.home_fixture_left div {
-  display: flex;
-}
-
-.home_fixture_left div h1 {
-  font-size: 3.5em;
-  color: white;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  margin-bottom: 50px;
-  border-bottom: medium solid #bb0927;
-}
-
-.home_fixture_left div img {
-  height: 8em;
-  margin-right: auto;
-  position: relative;
-}
-
-.home_fixture_left button:hover {
-  background-color: #5c0615;
-  transition: all 300ms ease-in-out;
-}
-
-.home_fixture_right {
-  height: 125vh;
-  padding-bottom: 25vh;
-  z-index: 98;
-  width: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: relative;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-right: 10%;
-  padding-top: 5%;
-}
-
-.home_fixture_right h2 {
-  font-size: 1.7em;
-  color: white;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  margin-bottom: 20px;
-  margin-right: auto;
-}
-
-.home_fixture_right p {
-  font-size: 1.3em;
-  color: white;
-  margin-bottom: 40px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-}
-
-/* ----------------------fixture_cruces----------------------*/
-.fixture_cruces_section {
-  z-index: 98;
-  background-image: url("../img/fondo_blanco.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  position: relative;
-  top: -10em;
-  padding-top: 15%;
-}
-
-/* ----------------------fixture_cruces_nav----------------------*/
-.fixture_cruces_section .fixture_nav_cruces {
-  height: 50px;
-  width: 100px;
-  margin: calc(50% - 50px);
-  background-color: #bb0927;
-  position: fixed;
-  bottom: 0;
-  margin-bottom: 20px;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 1000 ease-in;
-}
-
-.fixture_cruces_section .fixture_nav_cruces:hover {
-  height: 60px;
-  width: 80%;
-  margin: 0 10%;
-  margin-bottom: 20px;
-}
-
-.fixture_nav_cruces span {
-  font-size: 2em;
-  text-align: center;
-  color: white;
-}
-
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-}
-
-.fixture_cruces_section .fixture_nav_cruces:hover span {
-  display: none;
-}
-
-.fixture_cruces_section .fixture_nav_cruces nav {
-  display: none;
-}
-
-.fixture_cruces_section .fixture_nav_cruces:hover nav {
-  display: flex;
-}
-
-.fixture_cruces_section .fixture_nav_cruces:hover a {
-  font-size: 1.2em;
-  color: white;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  margin: 0 20px;
-  border-bottom: solid 2px transparent;
-}
-
-.fixture_cruces_section .fixture_nav_cruces a:hover {
-  border-bottom: solid 2px white;
-}
-
-/* ----------------------fixture_cruces_grupos----------------------*/
-.fixture_cruces_section h1 {
-  font-size: 2em;
-  color: black;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  text-align: center;
-  padding: 5% 0;
-}
-
-.fixture_cruces_grupos .tabla_grupos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0px 10%;
-}
-
-.fixture_cruces {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 0px 20%;
-}
-
-.main_tabla {
-  margin: 5% 5%;
-}
-
-.fixture_cruces table .nombre_grupo, .tabla_grupos table .nombre_grupo {
-  font-family: qatar;
-  color: white;
-  background-color: #5c0615;
-  border-top-left-radius: 20px;
-}
-
-.fixture_cruces table tr th, .tabla_grupos table tr th {
-  padding: 10px;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  background-color: rgba(78, 78, 78, 0.231372549);
-  color: #5c0615;
-  margin-top: 5px;
-}
-
-.fixture_cruces .talbe_in, .tabla_grupos .talbe_in {
-  width: 100%;
-}
-
-.fixture_cruces .talbe_in tr td, .tabla_grupos .talbe_in tr td {
-  padding: 10px;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  background-color: rgba(78, 78, 78, 0.231372549);
-  color: #5c0615;
-  margin-top: 5px;
-}
-
-.fixture_cruces .talbe_in input, .tabla_grupos .talbe_in input {
-  width: 50px;
-  font-size: 1.5em;
-  font-family: qatar;
-  text-align: center;
-  border-radius: 10px;
-  background-color: transparent;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  .home_fixture {
-    height: 125vh;
-    display: block;
-  }
-  .home_fixture_left {
-    height: 35vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    justify-content: none;
-    z-index: 98;
-  }
-  .home_fixture_left div h1 {
-    margin: 0;
-    padding: 0;
-  }
-  .home_fixture_right {
-    height: 80vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    z-index: 98;
-    text-align: none;
-    justify-content: start;
-  }
-  .home_fixture_right h2 {
-    margin: 0;
-    padding: 0 5%;
-    padding-bottom: 5%;
-    font-size: 1.5em;
-    text-align: center;
-  }
-  .home_fixture_right p {
-    margin: 0;
-    padding: 0 5%;
-    font-size: 1.2em;
-    text-align: justify;
-  }
-  /* ----------------------fixture_cruces----------------------*/
-  .fixture_cruces_section {
-    justify-content: center;
-    text-align: center;
-  }
-  .fixture_cruces_grupos .tabla_grupos {
-    grid-template-columns: 1fr;
-    margin: 0;
-    padding: 0;
-  }
-  .fixture_cruces {
-    margin: 0;
-  }
-  .fixture_cruces_section .fixture_nav_cruces {
-    display: none;
-  }
-  /* ----------------------fixture_cruces_grupos----------------------*/
-}
 /* ------------------------------------Equipos------------------------------------ */
 .home_equipos {
   width: 100%;
@@ -796,6 +519,7 @@ input[type=number]::-webkit-outer-spin-button {
   background-position: 100%;
   display: flex;
   z-index: 97;
+  min-height: 100%;
 }
 
 .home_equipos_center {
@@ -858,42 +582,103 @@ input[type=number]::-webkit-outer-spin-button {
   padding-top: 15%;
 }
 
-.equipos_grupos h1 {
+.equipos_grupos h2 {
   font-size: 2em;
   color: black;
-  font-family: "Raleway", sans-serif;
+  font-family: qatar;
   font-weight: 800;
   text-align: center;
   padding-bottom: 5%;
 }
 
-.equipos_grupos div {
+.equipos_grupos .equipos_grupos_divicion {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 15vh;
 }
 
-.equipos_grupos div table {
-  display: inline;
+.equipos_grupos .container-grups {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 100%;
+  gap: 100px;
 }
 
-.equipos_grupos div table th {
-  font-family: qatar;
-  color: white;
-  background-color: #5c0615;
-  border-top-left-radius: 20px;
-  text-align: center;
+.equipos_grupos .container {
+  height: 300px;
   width: 300px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
 }
 
-.equipos_grupos div table td {
+.equipos_grupos .main {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  box-shadow: 0px -10px 20px -5px black, 0px 10px 20px -5px black;
+  border-radius: 10% 10% 10% 10%/50% 50% 50% 50%;
+}
+
+.equipos_grupos .header {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  background: -webkit-linear-gradient(rgb(174, 145, 66), rgb(223, 206, 109));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 10px;
+  font-family: qatar;
+}
+
+.equipos_grupos .footer {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.equipos_grupos .group {
+  display: flex;
+  flex-basis: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+  border: 0px red solid;
+  font-size: 16px;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  gap: 5px;
+}
+
+.equipos_grupos .group-position {
+  display: flex;
+  border: 0px solid black;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeee4;
+  flex-basis: 100%;
   padding: 10px;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  background-color: rgba(78, 78, 78, 0.231372549);
-  color: #5c0615;
-  margin-top: 5px;
+}
+
+.equipos_grupos .group-position-element {
+  display: flex;
+  flex-grow: 0;
+  align-self: center;
+  font-family: qatar;
+}
+
+.equipos_grupos .team-name {
+  flex-grow: 5;
+  font-family: qatar;
+}
+
+.equipos_grupos .team-flag {
+  height: 0;
+  min-height: 100%;
 }
 
 /* ----------------------Equipos_clasificaciones----------------------*/
@@ -901,21 +686,23 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
   position: relative;
   top: -10em;
-  margin-bottom: -15vh;
+  margin-bottom: -40vh;
 }
 
-.equipos_tablasclasificatorias h1 {
+.equipos_tablasclasificatorias h2 {
   font-size: 2em;
   color: black;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
+  font-family: qatar;
   text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 .equipos_tablasclasificatorias .div-clasi-prim {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
   margin-top: 50px;
 }
 
@@ -923,18 +710,30 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
+  justify-items: center;
   margin-top: 20px;
 }
 
 .equipos_tablasclasificatorias div div {
+  width: 500px;
+  border-radius: 10% 10% 10% 10%/50% 50% 50% 50%;
+  box-shadow: 0px -10px 20px -5px black, 0px 10px 20px -5px black;
   display: flex;
   justify-content: center;
+  margin-bottom: 20%;
 }
 
-.equipos_tablasclasificatorias div table {
+.equipos_tablasclasificatorias div div img {
+  width: 100px;
+}
+
+.equipos_tablasclasificatorias div .table-container {
   border-collapse: collapse;
-  margin-bottom: 20px;
   text-align: center;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  margin-bottom: 10%;
+  margin-top: 5%;
 }
 
 .equipos_tablasclasificatorias div table td td {
@@ -942,15 +741,21 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .equipos_tablasclasificatorias div table tr .th_tittle {
-  border-top-left-radius: 20px;
+  background: -webkit-linear-gradient(rgb(174, 145, 66), rgb(223, 206, 109));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: qatar;
   font-size: 30px;
+  height: 60px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border: none;
 }
 
 .equipos_tablasclasificatorias div table th {
   font-family: "Raleway", sans-serif;
-  color: white;
-  background-color: #5c0615;
+  color: black;
+  background: transparent;
   width: 400px;
 }
 
@@ -988,21 +793,27 @@ input[type=number]::-webkit-outer-spin-button {
   .equipos_grupos {
     background-size: contain;
   }
-  .equipos_grupos div {
+  .equipos_grupos .equipos_grupos_divicion {
     flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 0;
   }
-  .equipos_grupos div table {
+  .container {
+    padding-bottom: 50%;
     margin-bottom: 10%;
-    font-size: 1.5em;
+    margin-top: 10%;
+  }
+  .equipos_tablasclasificatorias {
+    margin-bottom: -20vh;
   }
   .equipos_tablasclasificatorias .div-clasi-prim {
     grid-template-columns: 1fr;
   }
   .equipos_tablasclasificatorias div div {
-    margin: 0 10%;
+    margin: 10% 10%;
+    width: 400px;
+  }
+  .equipos_tablasclasificatorias div table th {
+    width: 300px;
   }
 }
 /* ------------------------------------Estadios------------------------------------ */
@@ -1149,6 +960,378 @@ input[type=number]::-webkit-outer-spin-button {
   .estadios_lista div p {
     margin: 0 10%;
     padding: 10% 0;
+  }
+}
+/* ------------------------------------Fixture------------------------------------ */
+.home_fixture {
+  height: 125vh;
+  width: 100%;
+  background-image: url("../img/fondo_fixture.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  z-index: 98;
+}
+
+.home_fixture_left {
+  height: 125vh;
+  padding-bottom: 25vh;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_fixture_left div {
+  display: flex;
+  align-content: center;
+}
+
+.home_fixture_left div h1 {
+  font-size: 3.5em;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  margin-bottom: 50px;
+  border-bottom: medium solid #bb0927;
+  padding-top: 20%;
+}
+
+.home_fixture_left div img {
+  height: 8em;
+  margin-right: auto;
+  padding-top: 20%;
+}
+
+.home_fixture_left button:hover {
+  background-color: #5c0615;
+  transition: all 300ms ease-in-out;
+}
+
+.home_fixture_right {
+  height: 125vh;
+  padding-bottom: 25vh;
+  z-index: 98;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 10%;
+  padding-top: 5%;
+}
+
+.home_fixture_right h2 {
+  font-size: 1.7em;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  margin-bottom: 20px;
+  margin-right: auto;
+}
+
+.home_fixture_right p {
+  font-size: 1.3em;
+  color: white;
+  margin-bottom: 40px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+/* ----------------------fixture_cruces----------------------*/
+.fixture_cruces_section {
+  z-index: 98;
+  background-image: url("../img/fondo_blanco.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  top: -10em;
+  padding-top: 15%;
+}
+
+/* ----------------------fixture_cruces_nav----------------------*/
+.fixture_cruces_section .fixture_nav_cruces {
+  height: 50px;
+  width: 100px;
+  margin: calc(50% - 50px);
+  background-color: #bb0927;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1000 ease-in;
+}
+
+.fixture_cruces_section .fixture_nav_cruces:hover {
+  height: 60px;
+  width: 80%;
+  margin: 0 10%;
+  margin-bottom: 20px;
+}
+
+.fixture_nav_cruces span {
+  font-size: 2em;
+  text-align: center;
+  color: white;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.fixture_cruces_section .fixture_nav_cruces:hover span {
+  display: none;
+}
+
+.fixture_cruces_section .fixture_nav_cruces nav {
+  display: none;
+}
+
+.fixture_cruces_section .fixture_nav_cruces:hover nav {
+  display: flex;
+}
+
+.fixture_cruces_section .fixture_nav_cruces:hover a {
+  font-size: 1.2em;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  margin: 0 20px;
+  border-bottom: solid 2px transparent;
+}
+
+.fixture_cruces_section .fixture_nav_cruces a:hover {
+  border-bottom: solid 2px white;
+}
+
+/* ----------------------fixture_cruces----------------------*/
+.fixture_cruces_section h2 {
+  font-size: 2em;
+  color: black;
+  font-family: qatar;
+  font-weight: 800;
+  text-align: center;
+}
+
+.fixture_cruces .tabla .container {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 5% 10%;
+}
+
+.tabla-grupos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.tabla-grupos .container {
+  padding: 10%;
+}
+
+.fixture_cruces .tabla .container .header {
+  text-align: center;
+  border: 1px solid #5c0615;
+  background-color: #5c0615;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 0.5em;
+  height: 50px;
+}
+
+.fixture_cruces .tabla .container .header h2 {
+  font-family: qatar;
+  background: -webkit-linear-gradient(rgb(174, 145, 66), rgb(223, 206, 109));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5em;
+}
+
+.fixture_cruces .tabla .container .body .info-time {
+  border: 1px solid #5c0615;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fixture_cruces .tabla .container .body .info-teams {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  border: 1px solid #5c0615;
+}
+
+.fixture_cruces .tabla .container .body div p {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  font-family: qatar;
+  margin: 0;
+}
+
+.fixture_cruces .tabla .container .body .info-teams input {
+  width: 40px;
+  height: 40px;
+  font-size: 1em;
+  font-family: qatar;
+  text-align: center;
+  border-radius: 10px;
+  background-color: transparent;
+  overflow-y: none;
+  scrollbar-width: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container-tabla-puntos {
+  width: 80%;
+  background: white;
+  margin: auto 50px;
+  padding: 5%;
+  border: 2px solid #5c0615;
+  border-radius: 25px;
+}
+
+.container-tabla-puntos table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-top: 24px;
+  font-family: qatar;
+}
+
+.container-tabla-puntos table tbody tr {
+  border-top: 1px solid #E1E1E1;
+  border-radius: 4px;
+}
+
+.container-tabla-puntos th {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+}
+
+.container-tabla-puntos td {
+  padding: 16px 0;
+}
+
+.container-tabla-puntos td .flag-img-container {
+  float: left;
+  margin-right: 12px;
+  padding-top: 10px;
+}
+
+.container-tabla-puntos td .flag-img-container .flag {
+  border-radius: 15px;
+  width: 50px;
+}
+
+.container-tabla-puntos td .equipo-name {
+  float: left;
+  margin-top: 7px;
+}
+
+.fixture_cruces .tabla-octavos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+}
+
+.tabla-semis, .tabla-cuartos, .tabla-3er4to, .tabla-final {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+}
+
+.fixture_cruces .tabla-octavos .container {
+  border: none;
+}
+
+@media (max-width: 1024px) {
+  .home_fixture {
+    height: 125vh;
+    display: block;
+  }
+  .home_fixture_left {
+    height: 35vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: none;
+    z-index: 98;
+  }
+  .home_fixture_left div h2 {
+    margin: 0;
+    padding: 0;
+  }
+  .home_fixture_right {
+    height: 80vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 98;
+    text-align: none;
+    justify-content: start;
+  }
+  .home_fixture_right h2 {
+    margin: 0;
+    padding: 0 5%;
+    padding-bottom: 5%;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .home_fixture_right p {
+    margin: 0;
+    padding: 0 5%;
+    font-size: 1.2em;
+    text-align: justify;
+  }
+  /* ----------------------fixture_cruces----------------------*/
+  .fixture_cruces_section {
+    justify-content: center;
+    text-align: center;
+  }
+  .fixture_cruces .tabla {
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+  }
+  .fixture_cruces .tabla .container {
+    padding: 3%;
+  }
+  .tabla-grupos .container {
+    margin-bottom: 10%;
+  }
+  .tabla-grupos .container-tabla-puntos {
+    margin-bottom: 10%;
+    padding: 3%;
+  }
+  .fixture_cruces {
+    margin: 0;
+  }
+  .fixture_cruces_section .fixture_nav_cruces {
+    display: none;
+  }
+  /* ----------------------fixture_cruces----------------------*/
+  .fixture_cruces .tabla-octavos {
+    display: block;
   }
 }
 /* ------------------------------------Noticias------------------------------------ */

@@ -1,0 +1,339 @@
+/* ------------------------------------Equipos------------------------------------ */
+
+.home_equipos{
+    width: 100%;
+    background-image: url("../img/fondo_equipos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    display: flex;
+    z-index: 97; 
+    min-height: 100%;
+}
+
+.home_equipos_center{
+    height: 125vh;
+    width: 100%;
+
+    z-index: 98;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 20%;
+    padding-bottom: 10%;
+}
+
+
+.home_equipos_center h1{
+    font-size: 2.3em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-bottom: 40px;
+    border-bottom: medium solid #bb0927;
+    margin-right: auto;
+}
+
+.home_equipos_center p{
+    font-size: 1.3em;
+    color: white;
+    margin-bottom: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.home_equipos_center button{
+    font-size: 0.7em;
+    width: 12em;
+    height: 3em;
+    background-color: #bb0927;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.home_equipos_center button:hover{
+    background-color: #5c0615;
+    transition: all 300ms ease-in-out;
+}
+
+/* ----------------------equipos_grupos----------------------*/
+
+.equipos_grupos{
+    z-index: 98;
+    background-image: url("../img/fondo_blanco.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -10em;
+    padding-top: 15%;
+}
+
+.equipos_grupos h2{
+    font-size: 2em;
+    color: black;
+    font-family: qatar;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.equipos_grupos .equipos_grupos_divicion{
+    display: flex;
+    justify-content: space-around;
+}
+
+.equipos_grupos .container-grups {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100%;
+    gap: 100px;
+}
+
+.equipos_grupos .container {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.equipos_grupos .main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0px -10px 20px -5px black, 0px 10px 20px -5px black;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+}
+
+.equipos_grupos .header {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    background: -webkit-linear-gradient(rgb(174, 145, 66), rgb(223, 206, 109));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px;
+    font-family: qatar;
+}
+
+.equipos_grupos .footer {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.equipos_grupos .group {
+    display: flex;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    border: 0px red solid;
+    font-size: 16px;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 5px;
+    
+}
+
+.equipos_grupos .group-position {
+    display: flex;
+    border: 0px solid black;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeee4;
+    flex-basis: 100%;
+    padding: 10px;
+}
+
+.equipos_grupos .group-position-element {
+    display: flex;
+    flex-grow: 0;
+    align-self: center; 
+    font-family: qatar;
+}
+
+.equipos_grupos .team-name {
+    flex-grow: 5;
+    font-family: qatar;
+}
+
+.equipos_grupos .team-flag {
+    height:0;
+    min-height:100%;
+}
+
+
+
+
+/* ----------------------Equipos_clasificaciones----------------------*/
+
+
+.equipos_tablasclasificatorias{
+    width: 100%;
+    position: relative;
+    top: -10em;
+    margin-bottom: -40vh;
+}
+
+.equipos_tablasclasificatorias h2{
+    font-size: 2em;
+    color: black;
+    font-family: qatar;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.equipos_tablasclasificatorias .div-clasi-prim{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-top: 50px;
+}
+
+.equipos_tablasclasificatorias .div-clasi-seg{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+
+.equipos_tablasclasificatorias div div{
+    width: 500px;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    box-shadow: 0px -10px 20px -5px black, 0px 10px 20px -5px black;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20%;
+}
+
+.equipos_tablasclasificatorias div div img{
+     width: 100px;
+}
+
+.equipos_tablasclasificatorias div .table-container{
+    border-collapse: collapse;
+    text-align: center;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+
+
+.equipos_tablasclasificatorias div table td td{
+    border: solid 1px rgba(0, 0, 0, 0.445);
+
+}
+
+.equipos_tablasclasificatorias div table tr .th_tittle{
+    background: -webkit-linear-gradient(rgb(174, 145, 66), rgb(223, 206, 109));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: qatar;
+    font-size: 30px;
+    height: 60px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border: none;
+}
+
+.equipos_tablasclasificatorias div table th{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    background: transparent;
+    width: 400px;
+}
+
+@media(max-width: 768px){
+
+    .home_equipos{
+        height: 125vh;
+        background-position: center;
+        background-position-x: 0;
+    }
+
+    .home_equipos_center{
+        height: 125vh;
+        padding: 0 10%;
+        margin: 0;
+        padding-bottom: 30vh;
+        align-items: center;
+    }
+
+    .home_equipos_center h1{
+        margin: 0;
+        padding: 0;
+        font-size: 1.8em;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    .home_equipos_center p{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10%;
+        text-align: justify;
+    }
+
+    .home_equipos_center button{
+        margin: 0;
+        padding: 0;
+    }
+
+
+/* ----------------------equipos_grupos----------------------*/
+
+    .equipos_grupos{
+        background-size: contain;
+    }
+
+    .equipos_grupos .equipos_grupos_divicion{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .container{
+        padding-bottom: 50%;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+
+
+    
+    .equipos_tablasclasificatorias{
+        margin-bottom: -20vh;
+    }
+
+    .equipos_tablasclasificatorias .div-clasi-prim{
+        grid-template-columns: 1fr;
+    }
+
+    .equipos_tablasclasificatorias div div{
+        margin: 10% 10%;
+        width: 400px;
+
+    }
+    .equipos_tablasclasificatorias div table th{
+        width: 300px;
+    }
+    
+}

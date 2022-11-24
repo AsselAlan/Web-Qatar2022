@@ -1,0 +1,255 @@
+/* ------------------------------------Noticias------------------------------------ */
+
+
+.home_noticias{
+    height: 125vh;
+    width: 100%;
+    background-image: url("../img/fondo_noticias.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    z-index: 98;
+}
+
+.home_noticias_left{
+    height: 125vh;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+
+
+.home_noticias_left h1{
+    font-size: 3em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-bottom: 50px;
+    border-bottom: medium solid #bb0927;
+    margin-left: 25%;
+    margin-right: auto;
+}
+
+.home_noticias_left p{
+    font-size: 1.3em;
+    color: white;
+    margin-bottom: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin-left: 25%;
+}
+
+
+.home_noticias_left button{
+    font-size: 0.6em;
+    width: 12em;
+    height: 3em;
+    background-color: #bb0927;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 25%;
+    margin-right: auto;
+}
+
+.home_noticias_left button:hover{
+    background-color: #5c0615;
+    transition: all 300ms ease-in-out;
+}
+
+
+.home_noticias_right{
+    height: 125vh;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    position: relative;
+    right: 0;
+}
+
+
+
+
+
+/* ----------------------noticias_noticias----------------------*/
+
+.noticias_noticias{
+    width: 100%;
+    display: flex;
+    background-image: url("../img/fondo_blanco.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -10em;
+    z-index: 98;
+    margin-bottom: -20ºvh;
+
+}
+.noticias_left{
+    width: 20%;
+    border-right: 1px solid #4e4e4e31;
+}
+
+.noticias_right{
+    width: 20%;
+    border-left: 1px solid #4e4e4e31;
+}
+
+.noticias_medium{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10%;
+}
+
+.noticias_vermas{
+    font-size: 0.8em;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    margin: 1em 0px;
+    border: none;
+    color: white;
+
+    background-color: #bb0927;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+
+}
+
+.noticias_vermas:hover{
+    background-color: #5c0615;
+    color: white;
+    transition: all 300ms ease-in-out;
+}
+
+.not_off{
+    display: none;
+}
+
+.not_on{
+    display: flex;
+    padding: 0;
+}
+
+
+
+@media(max-width: 768px){
+
+    .home_noticias{
+        z-index: 98;
+    }
+    .home_noticias_left{
+        width: 100%;
+        z-index: 98;
+        padding-bottom: 30vh;
+    }
+
+    .home_noticias_right{
+        display: none;
+    }
+
+    .home_noticias_left h1{
+        margin: 0 5%;
+        padding: 0;
+        margin-right: auto;
+        margin-bottom: 10%;
+    }
+
+
+    .home_noticias_left p{
+        margin: 0 5%;
+        padding: 0;
+        padding-bottom: 10%;
+
+    }
+
+
+    .noticias_noticias{
+        padding-top: 5%;
+    }
+
+    .noticias_left{
+        display: none;
+    }
+
+    .noticias_right{
+        display: none;
+    }
+
+    .noticias_medium{
+        width: 100%;
+        margin: 0 5%;
+    }
+
+
+}
+
+.pantalla_carga_noticias{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.pantalla_carga{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.logo_carga{
+    width: 100%;
+    height: 100vh;
+    background-color: #5c0615;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-wrap {
+    border-radius: 30px;
+
+}
+
+.triangle1{
+    border-bottom-color: #5c0615;
+
+}
+.triangle1 img{
+    height: 300px;
+    border-bottom-color: #5c0615;
+    animation: fadecolor 1s infinite;
+    animation: rotation ease-in-out 1s infinite;   
+}
+
+@keyframes rotation {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(360deg);}
+    100% {transform: rotate(360deg);}
+}          
+
+@keyframes fadecolor {
+    0% {transform: rotate(-0deg);}
+    20% {transform: rotate(-360deg);}
+    100% {transform: rotate(-360deg);}
+}
+
+
