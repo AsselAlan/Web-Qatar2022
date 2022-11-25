@@ -101,7 +101,9 @@ header .nav2 {
   padding-top: 20%;
 }
 header .nav2 li {
+  margin-left: 10%;
   padding-top: 5%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.144);
 }
 
 /*----------------------Home----------------------*/
@@ -111,7 +113,6 @@ header .nav2 li {
 .home_inicio .home_inicio_img_fondo {
   background-image: url("../img/fondo_inicio.jpg");
   background-size: cover;
-  background-position: 100%;
   width: 100%;
   height: 100vh;
 }
@@ -334,6 +335,7 @@ header .nav2 li {
 footer {
   width: 100%;
   background-color: rgba(78, 78, 78, 0.6549019608);
+  margin-top: 10%;
 }
 footer h3 {
   padding-top: 1em;
@@ -393,8 +395,35 @@ footer .subir a {
   font-family: "Raleway", sans-serif;
   text-align: center;
 }
+footer .footer-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-form .form-horizontal {
+  font-family: "Lato";
+  font-weight: 400;
+}
+footer .footer-form .form-control {
+  max-width: 400px;
+  background-color: white;
+  color: #000;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+}
+footer .send-button {
+  height: 34px;
+  width: 400px;
+  overflow: hidden;
+  background-color: #5c0615;
+}
+footer .send-button:hover {
+  background-color: #bb0927;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   body {
     font-size: 18px;
   }

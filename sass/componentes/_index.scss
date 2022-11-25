@@ -120,7 +120,9 @@ header{
         flex-direction: column;
         padding-top: 20%;
         li{
+            margin-left: 10%;
             padding-top: 5%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.144)
         }
         
     };
@@ -135,7 +137,6 @@ header{
     .home_inicio_img_fondo{
         background-image: url("../img/fondo_inicio.jpg");
         background-size: cover;
-        background-position: 100%;
         width: 100%;
         height: 100vh;
     }
@@ -386,6 +387,7 @@ header{
 footer{
     width: 100%;
     background-color: #4e4e4ea7;
+    margin-top: 10%;
 
         h3{
             padding-top: 1em;
@@ -447,9 +449,44 @@ footer{
             }
         }
         
+    .footer-form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .footer-form .form-horizontal {
+        font-family: 'Lato';
+        font-weight: 400;
+    }
+  
+    .footer-form  .form-control {
+        max-width: 400px;
+        background-color: white;
+        color: #000;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        font-family: 'Raleway', sans-serif;
+    }
+  
+    .send-button {
+        height: 34px;
+        width: 400px;
+        overflow: hidden;
+        background-color: #5c0615;
+    }
+
+    .send-button:hover{
+        background-color: #bb0927;
+    }
+             
+
 }
 
-@media(max-width: 768px){
+
+
+@media(max-width: 1024px){
     body{
         font-size: 18px;
     }
